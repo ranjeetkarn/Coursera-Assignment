@@ -1,10 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="LunchCheck">
   <head>
     <meta charset="utf-8">
-    <title>Hello Coursera</title>
+    <title>Coursera Assignment Solution</title>
   </head>
   <body>
-    <h1>Hello Coursera students!</h1>
+    <h1>Module1 Assignment Solution  (Lunch Check)</h1>
+    <div ng-controller="LunchCheckController">
+
+      <input type="text" name="" value="" ng-model="string" ng-change="convertToArray()">
+      <button type="button" name="button" ng-click="checkIfTooMuch()" >Check If Too Much</button>
+      <br/>
+      <p ng-show="emptyCheck">Please enter data first!</p>
+      <p ng-show="visible">Enjoy!</p>
+      <p ng-show="visibleTooMuch">Too much!</p>
+
+
+
+
+
+
+
+    </div>
+
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+
   </body>
 </html>
